@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takasaki Studio</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="apresentacao">
+        <div class="parte_principal">
+          <img class="img" src="Logo (1).svg" alt="Logo" />
+          <p class="texto">A criação do universo só depende de uma ideia</p>
+        </div>
+      </div>
+      <div class="botoes__container">
+        <nav class="botoes">
+          <a class="botao" href="#segunda_parte2">Soluções</a>
+          <a class="botao" href="#terceira__parte2">Portifólio</a>
+          <a class="botao" href="https://discord.gg/sNYTFGsJ" target="_blank"
+            >Contate-nos</a
+          >
+        </nav>
+      </div>
+    </section>
+
+    <section id="segunda_parte2" class="segunda_parte">
+      <div class="textos">
+        <h1 class="titulo">
+          Aqui as suas ideias viram
+          <span class="outra__cor">realidade</span>
+        </h1>
+        <div class="titulo_texto">
+          <p class="texto__dois">
+            Na Takasaki Studio construímos soluções para tornar possível o seu
+            sonho, garantindo sempre a qualidade e um desenvolvimento
+            personalizado para as suas necessidades
+          </p>
+        </div>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper swipersexo">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="Group 5bgl de fisica lá.svg" />
+            <p class="swiper__texto">Website Spa</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="Group 6html.svg" />
+            <p class="swiper__texto">Website estático</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="next 1Simbolo n.svg" />
+            <p class="swiper__texto">Website Dinâmico</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="Group 7discord.svg" />
+            <p class="swiper__texto">Bots para Discord</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="Group 7aviao.svg" />
+            <p class="swiper__texto">Bot para telegram</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="Vectorferramenta.svg" />
+            <p class="swiper__texto">Manutenções</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="Vectorlampada.svg" />
+            <p class="swiper__texto">E muito mais!</p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section id="terceira__parte2" class="terceira__parte">
+      <div class="teste">
+        <h1 class="titulo__novo">
+          Nosso <span class="outracorport"> portfólio</span>
+        </h1>
+      </div>
+
+      <div>
+        <div>
+          <!-- Slider main container -->
+          <div class="swiperdois swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div></div>
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="imgetexto">
+                  <img class="swiper__img" src="mtalist.png" />
+                  <p class="swiper__texto2">
+                    MTA List é uma lista de servidores de Multi Theft Auto. Foi
+                    realizado o front-end e o back-end dessa aplicação, além de
+                    uma Dashboard.
+                    <a class="botao2" href="#"
+                      >Visualizar <img class="imgbotao2" src="ngcdobotao.svg"
+                    /></a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="imgetexto">
+                  <img class="swiper__img" src="sonic.png" />
+                  <p class="swiper__texto2">
+                    MTA List é uma lista de servidores de Multi Theft Auto. Foi
+                    realizado o front-end e o back-end dessa aplicação, além de
+                    uma Dashboard.
+                    <a class="botao2" href="#">Visualizar</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swipersexo = new Swiper(".swipersexo", {
+        spaceBetween: 10,
+        slidesPerView: 2,
+      });
+      const swiperdois = new Swiper(".swiperdois", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 10,
+        slidesPerView: 1,
+      });
+    </script>
+  </body>
+</html>
